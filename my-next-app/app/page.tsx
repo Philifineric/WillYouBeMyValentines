@@ -1,6 +1,6 @@
 'use client';
 import ButtonYes from "./components/buttonYes";
-import ButtonNo from "./components/buttonNo";
+import ButtonNo from "./components/ButtonNo";
 import { useRouter } from 'next/navigation';
 
 export default function Home() {
