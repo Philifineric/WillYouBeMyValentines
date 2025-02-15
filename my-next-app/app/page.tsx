@@ -16,21 +16,28 @@ export default function Home() {
 
 
   return (
-    
+    <div className="hearts">
+        <div className="heart"></div>
+        <div className="heart"></div>
+        <div className="heart"></div>
+        <div className="heart"></div>
+        <div className="heart"></div>
       <div
       className="hero min-h-screen"
   style={{
     backgroundImage: `url('/front page.jpg')`,
   }}>
-  <div className="hero-overlay bg-opacity-50"></div>
+  <div className="hero-overlay bg-opacity-30"></div>
   <div className="hero-content text-neutral-content text-center">
-    <div className="max-w-md">
-      <h1 className="mb-5 text-5xl font-bold">Will you be my</h1>
-      <h2 className="mb-5 text-7xl font-bold text-primary">VALENTINE</h2>
-      <button className="btn btn-primary">Get Started</button>
+    <div className="max-w-5xl" >
+      <h1 className="tracking-wide mb-5 mt-10 text-5xl font-bold text-rose-100" >Will you be my</h1>
+      <h2 className="tracking-widest mb-5 text-7xl font-bold text-rose-700">VALENTINE?</h2>
+      <div className="justify-center space-x-4 flex items-center">
       <ButtonYes onClick={handleYesClick} />
       <ButtonNo onClick={handleNoClick} />
+      </div>
     </div>
+  </div>
   </div>
   </div>
   );

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -18,4 +20,67 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+@keyframes fall {
+  0% {
+    transform: translateY(-100%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(80vh);
+    opacity: 0;
+  }
+}
+
+.heart {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  transform: rotate(-45deg);
+  animation: fall 5s linear infinite;
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.heart::before {
+  top: -10px;
+  left: 0;
+}
+
+.heart::after {
+  top: 0;
+  left: 10px;
+}
+
+.heart:nth-child(2) {
+  left: 20%;
+  animation-duration: 6s;
+  animation-delay: 1s;
+}
+
+.heart:nth-child(3) {
+  left: 40%;
+  animation-duration: 7s;
+  animation-delay: 2s;
+}
+
+.heart:nth-child(4) {
+  left: 60%;
+  animation-duration: 8s;
+  animation-delay: 3s;
+}
+
+.heart:nth-child(5) {
+  left: 80%;
+  animation-duration: 9s;
+  animation-delay: 4s;
 }
