@@ -7,8 +7,9 @@ interface ButtonYesProps {
 
 const ButtonYes: React.FC<ButtonYesProps> = ({ onClick }) => {
   return (
-    <button onClick={onClick} className="btn btn-success">
+    <button onClick={onClick} className="btn btn-lg glass">
       Yes
+      
     </button>
   );
 };
